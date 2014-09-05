@@ -1,0 +1,6 @@
+[program:sentry-web]
+directory=/root/venv/
+command=/root/venv/bin/sentry start http
+autostart=true
+autorestart=true
+redirect_stderr=true

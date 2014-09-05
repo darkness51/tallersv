@@ -1,0 +1,7 @@
+[program:sentry-celery]
+directory=/root/sentry/venv/
+command=/root/venv/bin/sentry celery worker -B -l WARNING
+autostart=true
+autorestart=true
+redirect_stderr=true
+killasgroup=true
