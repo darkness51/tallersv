@@ -1,0 +1,11 @@
+Host *.example.com
+User your_user
+
+#host *.amazonaws.com
+#User yourlogin
+
+Host *
+ForwardAgent yes
+TCPKeepAlive yes
+ServerAliveInterval 10
+ServerAliveCountMax 3
