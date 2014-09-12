@@ -11,6 +11,14 @@ role :db,  %w{deploy@104.130.134.190}
 # Stage
 set :stage, :staging
 
+# dont try and infer something as important as environment from
+# stage name.
+set :rails_env, :staging
+
+# number of unicorn workers, this will be reflected in
+# the unicorn.rb and the monit configs
+set :unicorn_worker_count, 5
+
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server definition into the
