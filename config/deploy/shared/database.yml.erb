@@ -12,5 +12,5 @@ default: &default
   pool: 5
   username: <%= "#{fetch(:application)}_#{fetch(:rails_env)}" %>
   password: <%= "#{fetch(:database_password)}" %>
-  host:
+  host: 127.0.0.1
   port: 5432
